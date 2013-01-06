@@ -1,7 +1,7 @@
 
 var util = require('util'),
     path = require('path'),
-    yeoman = require('yeoman');
+    yeoman = require('yeoman-generators');
 
 module.exports = Generator;
 
@@ -19,5 +19,5 @@ Generator.prototype.setupEnv = function setupEnv() {
 
 	// Copies the contents of the generator `templates`
 	// directory into your users new application path
-    this.directory('.','.', true);
+  this.directory('.','.', true);
 };
