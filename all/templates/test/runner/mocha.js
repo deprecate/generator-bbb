@@ -3,7 +3,7 @@ require({
   // Ensure you point to where your spec folder is, base directory is app/scripts,
   // which is why ../../test is necessary
   paths: {
-    spec: '../../test/spec'
+    spec: '../../spec'
   }
 
 }, [
