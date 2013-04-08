@@ -48,11 +48,6 @@ describe('BBB generator', function () {
       'app/scripts/router.js'
     ];
 
-    helpers.mockPrompt(this.backbone.app, {
-      'compassBootstrap': 'Y',
-      'includeRequireJS': 'N'
-    });
-
     this.backbone.app.run({}, function () {
       helpers.assertFiles(expected);
       done();
