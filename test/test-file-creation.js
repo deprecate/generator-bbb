@@ -45,7 +45,16 @@ describe('BBB generator', function () {
       'app/scripts/config.js',
       'app/scripts/app.js',
       'app/scripts/main.js',
-      'app/scripts/router.js'
+      'app/scripts/router.js',
+      'app/scripts/libs/almond.js',
+      'app/scripts/libs/backbone.js',
+      'app/scripts/libs/jquery.js',
+      'app/scripts/libs/lodash.js',
+      'app/scripts/libs/require.js',
+      'app/scripts/plugins/backbone.layoutmanager.js',
+      'app/styles/index.css',
+      'app/styles/h5bp.css',
+      'app/styles/bootstrap.css'
     ];
 
     this.backbone.app.run({}, function () {
