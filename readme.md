@@ -9,6 +9,29 @@ Models/Collections/Views/Routers inside modules, and build knowing you have
 efficient code that will not bottleneck your users.
 
 
+## Usage
+
+First make a new directory, and `cd` into it:
+```
+mkdir my-new-project && cd $_
+```
+
+Then install `generator-bbb`:
+```
+npm install generator-bbb
+```
+
+Run `yo bbb`:
+```
+yo bbb:all
+```
+
+Finally, install npm and bower dependencies:
+```
+npm install && bower install --dev
+```
+
+
 ## Documentation
 
 [Backbone Boilerplate documentation](https://github.com/tbranyen/backbone-boilerplate/wiki)
@@ -17,6 +40,12 @@ efficient code that will not bottleneck your users.
 ## Contribute
 
 See the [contributing docs](https://github.com/yeoman/yeoman/blob/master/contributing.md)
+
+When submitting an issue, please follow the [guidelines](https://github.com/yeoman/yeoman/blob/master/contributing.md#issue-submission). Especially important is to make sure Yeoman is up-to-date, and providing the command or commands that cause the issue.
+
+When submitting a bugfix, write a test that exposes the bug and fails before applying your fix. Submit the test alongside the fix.
+
+When submitting a new feature, add tests that cover the feature.
 
 
 ## License
