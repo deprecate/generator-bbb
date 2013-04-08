@@ -23,7 +23,7 @@
     "test": "mocha test/test-*.js"
   },
   "dependencies": {
-    "yeoman-generator": "https://github.com/yeoman/generators/archive/master.tar.gz"
+    "yeoman-generator": "~0.10.2"
   },
   "devDependencies": {
     "mocha": "~1.8.1"
