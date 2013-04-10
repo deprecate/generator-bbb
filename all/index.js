@@ -1,4 +1,3 @@
-
 var util = require('util'),
     path = require('path'),
     yeoman = require('yeoman-generator');
@@ -9,10 +8,10 @@ function Generator() {
   yeoman.generators.Base.apply(this, arguments);
 
   this.testFramework = this.options['test-framework'] || 'mocha';
-  this.hookFor(this.testFramework , { as: 'app' });
+  this.hookFor(this.testFramework, { as: 'app' });
 
   this.on('end', function () {
-    if(['all','bbb'].indexOf(this.generatorName) >= 0 ){
+    if (['all', 'bbb'].indexOf(this.generatorName) >= 0) {
       console.log('\nI\'m all done. Just run ' + 'npm install'.bold.yellow + ' to install the required dependencies.');
     }
   });
@@ -26,9 +25,9 @@ Generator.prototype.setupEnv = function setupEnv() {
   this.sourceRoot(path.join(__dirname, 'templates'));
 
 
-	// Copies the contents of the generator `templates/app`
-	// directory into your users new application path
-  this.directory('app','app', true);
+  // Copies the contents of the generator `templates/app`
+  // directory into your users new application path
+  this.directory('app', 'app', true);
 };
 
 Generator.prototype.git = function git() {
