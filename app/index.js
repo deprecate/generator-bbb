@@ -2,16 +2,14 @@ var util = require('util');
 var path = require('path');
 var yeoman = require('yeoman-generator');
 
-var Generator = module.exports = function Generator() {
+var Generator = module.exports = function Generator(args, options, config) {
   yeoman.generators.Base.apply(this, arguments);
 
   this.testFramework = this.options['test-framework'] || 'mocha';
   this.hookFor(this.testFramework, { as: 'app' });
 
   this.on('end', function () {
-    if (['all', 'bbb'].indexOf(this.generatorName) >= 0) {
-      console.log('\nI\'m all done. Just run ' + 'npm install'.bold.yellow + ' to install the required dependencies.');
-    }
+    this.installDependencies({ skipInstall: options['skip-install'] });
   });
 };
 

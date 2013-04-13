@@ -23,11 +23,6 @@ npm install -g generator-bbb
 
 Run `yo bbb`
 
-Finally, install npm and bower dependencies:
-```
-npm install && bower install --dev
-```
-
 
 ## Documentation
 
