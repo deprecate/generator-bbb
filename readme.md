@@ -18,7 +18,7 @@ mkdir my-new-project && cd $_
 
 Then install `generator-bbb`:
 ```
-npm install generator-bbb
+npm install -g generator-bbb
 ```
 
 Run `yo bbb`
