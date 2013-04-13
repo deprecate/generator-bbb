@@ -43,7 +43,7 @@ Generator.prototype.editorConfig = function editorConfig() {
 };
 
 Generator.prototype.gruntfile = function gruntfile() {
-  this.template('_gruntfile.js', 'gruntfile.js');
+  this.template('Gruntfile.js');
 };
 
 Generator.prototype.packageJSON = function packageJSON() {
