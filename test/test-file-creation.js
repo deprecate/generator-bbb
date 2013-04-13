@@ -1,8 +1,8 @@
 /*global describe:true, beforeEach:true, it:true */
 'use strict';
-var path    = require('path');
+var path = require('path');
 var helpers = require('yeoman-generator').test;
-var assert  = require('assert');
+var assert = require('assert');
 
 describe('BBB generator', function () {
   beforeEach(function (done) {
@@ -61,8 +61,5 @@ describe('BBB generator', function () {
       helpers.assertFiles(expected);
       done();
     });
-
   });
-
 });
-

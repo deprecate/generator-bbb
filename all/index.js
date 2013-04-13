@@ -22,7 +22,6 @@ Generator.prototype.setupEnv = function setupEnv() {
   // directory into your users new application path
   this.sourceRoot(path.join(__dirname, 'templates'));
 
-
   // Copies the contents of the generator `templates/app`
   // directory into your users new application path
   this.directory('app', 'app', true);
