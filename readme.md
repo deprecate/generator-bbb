@@ -24,6 +24,19 @@ npm install -g generator-bbb
 Run `yo bbb`
 
 
+## Options
+
+* `--skip-install`
+
+  Skips the automatic execution of `bower` and `npm` after
+  scaffolding has finished.
+
+* `--test-framework=[framework]`
+
+  Defaults to `mocha`. Can be switched for
+  another supported testing framework like `jasmine`.
+
+
 ## Documentation
 
 [Backbone Boilerplate documentation](https://github.com/tbranyen/backbone-boilerplate/wiki)
