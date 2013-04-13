@@ -21,10 +21,7 @@ Then install `generator-bbb`:
 npm install generator-bbb
 ```
 
-Run `yo bbb`:
-```
-yo bbb:all
-```
+Run `yo bbb`
 
 Finally, install npm and bower dependencies:
 ```
