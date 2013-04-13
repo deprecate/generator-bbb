@@ -11,17 +11,13 @@ efficient code that will not bottleneck your users.
 
 ## Usage
 
-First make a new directory, and `cd` into it:
-```
-mkdir my-new-project && cd $_
-```
+- Install it (only once): `npm install -g generator-bbb`
 
-Then install `generator-bbb`:
-```
-npm install -g generator-bbb
-```
+- Create a new folder and cd into it: `mkdir my-new-project && cd $_`
 
-Run `yo bbb`
+- Run `yo bbb` to scaffold out a BBB skeleton app
+
+- Run `grunt` to build and `grunt server` to preview
 
 
 ## Options
