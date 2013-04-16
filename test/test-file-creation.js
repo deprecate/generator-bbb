@@ -11,8 +11,8 @@ describe('BBB generator', function () {
         return done(err);
       }
       this.backbone = {};
-      this.backbone.app = helpers.createGenerator('bbb:all', [
-        '../../all', [
+      this.backbone.app = helpers.createGenerator('bbb:app', [
+        '../../app', [
           helpers.createDummyGenerator(),
           'mocha:app'
         ]
@@ -24,7 +24,7 @@ describe('BBB generator', function () {
 
   it('generator can be required without throwing', function () {
     // not testing the actual run of generators yet
-    this.all = require('../all');
+    this.all = require('../app');
   });
 
   it('should generate dotfiles', function (done) {
@@ -41,7 +41,7 @@ describe('BBB generator', function () {
       '.gitattributes',
       '.jshintrc',
       '.editorconfig',
-      'gruntfile.js',
+      'Gruntfile.js',
       'app/scripts/config.js',
       'app/scripts/app.js',
       'app/scripts/main.js',
@@ -57,6 +57,7 @@ describe('BBB generator', function () {
       'app/styles/bootstrap.css'
     ];
 
+    this.backbone.app.options['skip-install'] = true;
     this.backbone.app.run({}, function () {
       helpers.assertFiles(expected);
       done();
