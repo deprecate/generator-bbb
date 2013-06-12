@@ -16,6 +16,9 @@ var Generator = module.exports = function Generator(args, options, config) {
 util.inherits(Generator, yeoman.generators.Base);
 
 Generator.prototype.setupEnv = function setupEnv() {
+
+  // welcome message
+  console.log(this.yeoman);
   // Copies the contents of the generator `templates`
   // directory into your users new application path
   this.sourceRoot(path.join(__dirname, 'templates'));

@@ -1,2 +1,3 @@
-temp
-dist
+.tmp/
+dist/
+node_modules/
