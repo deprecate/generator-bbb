@@ -1,13 +1,9 @@
 # Backbone Boilerplate generator [![Build Status](https://secure.travis-ci.org/yeoman/generator-bbb.png?branch=master)](http://travis-ci.org/yeoman/generator-bbb)
 
-> This boilerplate is the product of much research and frustration. Existing
-boilerplates freely modify Backbone core, lack a build process, and are very
-prescriptive; Backbone Boilerplate changes that.
+## Note: This generator has been deprecated
 
-> Organize your application in a logical filesystem, develop your
-Models/Collections/Views/Routers inside modules, and build knowing you have
-efficient code that will not bottleneck your users.
-
+The Backbone Boilerplate project now has an [officially maintained](https://github.com/backbone-boilerplate/generator-bbb/) Yeoman generator which we recommend
+you use instead. Please uninstall your old version of this project and use the other one for maximum happiness.
 
 ## Usage
 
